@@ -54,10 +54,10 @@ class Display_program(QtWidgets.QMainWindow):
         self.ui.button_group_lang.setExclusive(True)
 
     def normal_mode_selected(self):
-        print('normal')
+        pass
 
     def awesome_mode_selected(self):
-        print('awesome')
+        pass
 
     def back_to_eng(self):
         self.ui.english_radio.setChecked(True)
