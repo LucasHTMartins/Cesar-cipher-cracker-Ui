@@ -1,0 +1,5 @@
+Add option to remove empty spaces when coding
+have a dictionary on file. maybe one with the most common words and then do the occurence frequency of those!
+Have option to jumble the dictionary. Estimate or try to brute force it and select the answers that score less than a threshold
+Have a way for the jumbled number alfabet to alfabet superposition to be sent to the user ussing a single number
+Try using numpy for the aboves

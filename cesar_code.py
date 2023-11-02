@@ -106,10 +106,12 @@ https://en.wikipedia.org/wiki/Caesar_cipher
 '''
 
 
-original_string = 'Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly, aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila, aoha uva h dvyk jvbsk il thkl vba.'
-norm_string = normalize_string(original_string)
-list_for_analysis = comp_list(norm_string)
-result = rotate(list_for_analysis)
-print(result)
+# original_string = 'Pm ol ohk hufaopun jvumpkluaphs av zhf, ol dyval pa pu jpwoly, aoha pz, if zv johunpun aol vykly vm aol slaalyz vm aol hswohila, aoha uva h dvyk jvbsk il thkl vba.'
+# norm_string = normalize_string(original_string)
+# list_for_analysis = comp_list(norm_string)
+# result = rotate(list_for_analysis)
+# print(result)
 
-print(caesar_cypher_decrypt(original_string, 7))
+# print(caesar_cypher_decrypt(original_string, 7))
+
+print(normalize_string('...T\nest2*\#sym\tbo[ls'))

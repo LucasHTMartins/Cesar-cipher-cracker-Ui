@@ -80,10 +80,10 @@ class Display_program(QtWidgets.QMainWindow):
         text = self.ui.user_input.toPlainText()
         key = self.current_key
         result = ''.join(
-        [list(ascii_lowercase)[(list(ascii_lowercase).index(letter) + key) % 26] if letter in list(ascii_lowercase)
-        else list(ascii_uppercase)[(list(ascii_uppercase).index(letter) + key) % 26] if letter in list(ascii_uppercase)
-        else letter for letter in text
-    ])
+            [list(ascii_lowercase)[(list(ascii_lowercase).index(letter) + key) % 26] if letter in list(ascii_lowercase)
+            else list(ascii_uppercase)[(list(ascii_uppercase).index(letter) + key) % 26] if letter in list(ascii_uppercase)
+            else letter for letter in text])
+
         self.ui.program_output.setPlainText(result)
 
     def normalize_string(self, input_str):
@@ -96,6 +96,7 @@ class Display_program(QtWidgets.QMainWindow):
             if letter.isalpha():
                 new_string += letter
         self.comp_list(new_string)
+        return new_string # For testing purposes
 
     def comp_list(self, norm_string, standard_op=False):
         '''
@@ -158,6 +159,7 @@ class Display_program(QtWidgets.QMainWindow):
         ])
         self.ui.program_output.setPlainText(result)
         self.ui.program_output_label.setText(f'Thinking the key is {key}!')
+        self.ui.program_output_label.resize(221, 21)
 
 
 if __name__ == '__main__':
