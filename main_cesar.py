@@ -1,14 +1,23 @@
 '''
-future implementation: portuguese and spanish
-future implementation: add dial to make text larger from input
+Sources for frequency and further reading
+https://www3.nd.edu/~busiforc/handouts/cryptography/Letter%20Frequencies.html
+https://norvig.com/mayzner.html
 
-future idea: vignere cypher
+https://en.wikipedia.org/wiki/Frequency_analysis
+https://en.wikipedia.org/wiki/Caesar_cipher
+'''
+
+'''
+TODO
+    - portuguese and spanish
+    - add dial to make text larger from input
+    - test coverage
 '''
 
 from string import ascii_lowercase, ascii_uppercase
 from collections import Counter
 import itertools
-from cesar_v3 import Ui_MainWindow
+from cesar_ui import Ui_MainWindow
 from PyQt5 import QtCore, QtGui, QtWidgets
 import random
 
